@@ -1,0 +1,329 @@
+
+could not grow remembered set
+
+/tmp/cng/sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak
+Squeak VM version: 5.0-201705051953  Fri May  5 19:57:53 UTC 2017 gcc 4.6.3 [Production Spur 64-bit VM]
+Built from: CoInterpreter VMMaker.oscog-eem.2207 uuid: 8da5de9b-33d7-478b-9081-58591f7da69a May  5 2017
+With: StackToRegisterMappingCogit VMMaker.oscog-eem.2208 uuid: 4877be7d-941d-4e15-b6df-4f1b8c7072a8 May  5 2017
+Revision: VM: 201705051953 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $ Date: Fri May 5 12:53:38 2017 -0700 $
+Plugins: 201705051953 https://github.com/OpenSmalltalk/opensmalltalk-vm.git $
+Build host: Linux testing-gce-7f90f1ba-7ff5-48ec-bb43-0cda2740ce00 3.13.0-115-generic #162~precise1-Ubuntu SMP Fri Mar 24 16:47:06 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+plugin path: /tmp/cng/sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/ [default: /tmp/cng/sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/]
+
+
+C stack backtrace & registers:
+*sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x41cbb2]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak(error+0xf)[0x41cdef]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak(remember+0x270)[0x434f30]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x444df3]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x444f29]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x44521d]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x44727e]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x4531b9]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak[0x456d42]
+sqcogspur64linuxht-20170505/lib/squeak/5.0-201705051953/squeak(ceStackOverflow+0x61)[0x45b5e1]
+[0x1e00424]
+[0x0]
+
+
+Smalltalk stack dump:
+    0x7ffe1c380e28 M ReferenceFinder(ClosureScanner)>scanQueueAdd: 0x28a99c0: a(n) ReferenceFinder
+    0x7ffe1c380e70 M ReferenceTraceNode>breadthFirstCloseOver:into:for: 0x28e8408: a(n) ReferenceTraceNode
+    0x7ffe1c380ed8 M ReferenceTraceNode(ClosureTraceNode)>breadthFirstCloseOver:for: 0x28e8408: a(n) ReferenceTraceNode
+    0x7ffe1c380f38 M ReferenceFinder(ClosureScanner)>breadthFirstScanClosure 0x28a99c0: a(n) ReferenceFinder
+    0x7ffe1c380f78 I ReferenceFinder(ClosureScanner)>basicScanClosure 0x28a99c0: a(n) ReferenceFinder
+    0x7ffe1c380fb8 I ReferenceFinder(ClosureScanner)>scanClosureSkipping: 0x28a99c0: a(n) ReferenceFinder
+    0x7ffe1c381000 I ReferenceFinder(ClosureScanner)>scanClosure 0x28a99c0: a(n) ReferenceFinder
+    0x7ffe1c381050 I ReferenceFinder class(ClosureScanner class)>openExplorerOn: 0x6250268: a(n) ReferenceFinder class
+    0x7ffe1c381088 M UndefinedObject>DoIt 0x60e78e0: a(n) UndefinedObject
+    0x7ffe1c3810f8 I Compiler>evaluate:in:to:notifying:ifFail:logged:profiled: 0x710fea8: a(n) Compiler
+    0x7ffe1c381180 M [] in SmalltalkEditor>evaluateSelectionAndDo:ifFail:profiled: 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c3811b0 M BlockClosure>on:do: 0x71101e8: a(n) BlockClosure
+    0x7ffe1c381220 I SmalltalkEditor>evaluateSelectionAndDo:ifFail:profiled: 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c381278 I SmalltalkEditor>doIt 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c3812a8 M SmalltalkEditor>doIt: 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c381300 I SmalltalkEditor(TextEditor)>dispatchOn: 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c381348 I SmalltalkEditor(TextEditor)>processKeyStroke: 0x68fa1b0: a(n) SmalltalkEditor
+    0x7ffe1c381388 M [] in InnerTextMorph>processKeyStroke: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c3813b8 M InnerTextMorph>handleInteraction: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37cf28 I InnerTextMorph>processKeyStroke: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37cf78 I [] in InnerTextMorph>keyStroke: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37cfb8 I SmalltalkCompleter(AutoCompleter)>autoCompletionAround:keyStroke: 0x68fa278: a(n) SmalltalkCompleter
+    0x7ffe1c37d008 I InnerTextMorph>keyStroke: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37d050 I InnerTextMorph>processKeystroke:localPosition: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37d090 M KeyboardEvent>sentTo:localPosition: 0x709a4b0: a(n) KeyboardEvent
+    0x7ffe1c37d0d0 M InnerTextMorph(Morph)>handleFocusEvent: 0x68f9c50: a(n) InnerTextMorph
+    0x7ffe1c37d108 M HandMorph>startKeyboardDispatch: 0x6244300: a(n) HandMorph
+    0x7ffe1c37d140 M KeyboardEvent>startDispatchFrom: 0x709a4b0: a(n) KeyboardEvent
+    0x7ffe1c37d178 M HandMorph>startEventDispatch: 0x6244300: a(n) HandMorph
+    0x7ffe1c37d1d8 M HandMorph>processEventQueue 0x6244300: a(n) HandMorph
+    0x7ffe1c37d218 M [] in WorldState>doOneCycleNow 0x61c93e8: a(n) WorldState
+    0x7ffe1c37d260 M Array(SequenceableCollection)>do: 0x6111a88: a(n) Array
+    0x7ffe1c37d298 M WorldState>handsDo: 0x61c93e8: a(n) WorldState
+    0x7ffe1c37d2d8 M WorldState>doOneCycleNow 0x61c93e8: a(n) WorldState
+    0x7ffe1c37d318 M WorldState>doOneCycle 0x61c93e8: a(n) WorldState
+    0x7ffe1c37d348 M PasteUpMorph>doOneCycle 0x623e0c0: a(n) PasteUpMorph
+    0x7ffe1c37d380 M [] in ProjectX class>spawnNewMorphicProcessFor: 0x61d1f90: a(n) ProjectX class
+    0x7ffe1c37d3c0 I [] in BlockClosure>newProcess 0x709a720: a(n) BlockClosure
+
+Most recent primitives
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+object:instVarAt:
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+objectSize:
+**PrimitiveFailure**
+**PrimitiveFailure**
+specialObjectsArray
+object:instVarAt:
+specialObjectsArray
+specialObjectsArray
+objectSize:
+new
+**IncrementalGC**
+
+stack page bytes 8192 available headroom 5576 minimum unused headroom 6016
+
+	(could not grow remembered set)
